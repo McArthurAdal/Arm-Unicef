@@ -1,0 +1,8 @@
+mlflow
+wandb
+pynvml
+torchmetrics
+faster-coco-eval
+lightning
+datasets
+huggingface_hub

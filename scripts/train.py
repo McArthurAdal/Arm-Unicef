@@ -1,5 +1,3 @@
-%%writefile train.py
-
 # %% [code] {"executionInfo":{"elapsed":4083,"status":"ok","timestamp":1716811785558,"user":{"displayName":"Mark Kyama","userId":"17617811822804530741"},"user_tz":-180},"id":"rDzuSIGa1QOl","jupyter":{"outputs_hidden":false},"execution":{"iopub.status.busy":"2024-06-08T01:56:04.787479Z","iopub.execute_input":"2024-06-08T01:56:04.787773Z","iopub.status.idle":"2024-06-08T01:56:08.419996Z","shell.execute_reply.started":"2024-06-08T01:56:04.787749Z","shell.execute_reply":"2024-06-08T01:56:08.419021Z"}}
 import os
 from huggingface_hub import HfApi, login, hf_hub_download
@@ -35,7 +33,7 @@ train_df = pd.read_csv(train_csv)
 test_df = pd.read_csv(test_csv)
 
 # %% [code] {"jupyter":{"outputs_hidden":false},"execution":{"iopub.status.busy":"2024-06-08T01:57:35.142727Z","iopub.execute_input":"2024-06-08T01:57:35.143089Z","iopub.status.idle":"2024-06-08T01:57:41.283451Z","shell.execute_reply.started":"2024-06-08T01:57:35.143059Z","shell.execute_reply":"2024-06-08T01:57:41.282642Z"}}
-images_folder = '/kaggle/working/images/'
+images_folder = './images/'
 
 train_folder = os.path.join(images_folder, 'train')
 test_folder = os.path.join(images_folder, 'test')
